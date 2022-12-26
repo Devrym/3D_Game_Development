@@ -49,6 +49,6 @@ public class PlayerGUI : MonoBehaviour
         {
             Time.timeScale = 0;
         }
-
+        
     }
 }
