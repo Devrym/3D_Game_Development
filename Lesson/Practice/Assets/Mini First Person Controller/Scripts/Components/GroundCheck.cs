@@ -3,6 +3,7 @@
 [ExecuteInEditMode]
 public class GroundCheck : MonoBehaviour
 {
+    
     [Tooltip("Maximum distance from the ground.")]
     public float distanceThreshold = .15f;
 
@@ -16,6 +17,8 @@ public class GroundCheck : MonoBehaviour
     const float OriginOffset = .001f;
     Vector3 RaycastOrigin => transform.position + Vector3.up * OriginOffset;
     float RaycastDistance => distanceThreshold + OriginOffset;
+
+    
 
 
     void LateUpdate()
