@@ -24,7 +24,6 @@ public class RagdollController : MonoBehaviour
 
     private void Update()
     {
-        Debug.Log(isAlive);
         if (Vector3.Distance(_animator.GetBoneTransform(HumanBodyBones.Head).position, _playerPoint.position) < 10f && isAlive)
         {
             Kill();
